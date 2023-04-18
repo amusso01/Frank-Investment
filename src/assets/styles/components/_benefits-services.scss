@@ -1,0 +1,72 @@
+
+  
+
+
+.investment-service__service-benefits-block__grid{
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+
+  .services-benefits__service{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @extend .content-block;
+  }
+
+  .services-benefits__benefits{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @extend .content-block;
+  }
+
+  &.first, &.third{
+    .services-benefits__service{
+      background-color: #F4F4F4;
+    }
+  }
+
+  &.second{
+    .services-benefits__benefits{
+      background-color: #F4F4F4;
+    }
+  }
+
+  h2{
+    margin-bottom: 31px;
+  }
+
+  .services-benefits__service{
+    .content{
+      position: relative;
+      padding-left: 30px;
+
+      &::before{
+        @include pseudo;
+
+        width: 2px;
+        height: 100%;
+        background-color: $color__link-hover;
+        left: 0;
+      }
+    }
+  }
+
+  .services-benefits__benefits{
+    .list-benefit{
+      margin-bottom: 8px;
+      line-height: 30px;
+      display: flex;
+      span{
+        display: inline-block;
+        &:first-of-type{
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .serives-benefits__second-row{
+    margin-top: 65px;
+  }
+
+}
+

@@ -1,0 +1,38 @@
+//Custom styles start here
+
+// Vendors
+// @import "vendors/lazysizes";
+// @import "vendors/s2r";
+@import "vendors/accordion-js";
+
+
+// Common
+@import "common/reset";
+@import "common/variables";
+// Import sassflexbox http://sassflexboxgrid.com/views/documentation.html
+@import "common/wp-core";
+@import "common/mixin";
+@import "common/general";
+@import "common/helper";
+
+// Components
+// @import "components/hamburger";
+@import "components/search-form";
+@import "components/buttons";
+@import "components/header";
+@import "components/nav";
+@import "components/footer";
+@import "components/teams";
+@import "components/investement-hero";
+@import "components/benefits-services";
+@import "components/full-banner";
+@import "components/cards";
+@import "components/image-text";
+@import "components/fees";
+@import "components/info-blue-line";
+@import "components/contact-banner";
+@import "components/accordion";
+@import "components/intro-pages";
+
+// Templates
+@import "templates/page";

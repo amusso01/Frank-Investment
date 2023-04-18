@@ -1,0 +1,75 @@
+.contact-banner__inner{
+  background-color: #2D4B6F;
+  padding: 60px 0;
+  min-height: 298px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3{
+    color: $color__bright;
+    margin-bottom: 40px;
+  }
+  .contact-banner__grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .btn{
+
+      i{
+        display: inline-block;
+        margin-right: 10px;
+      }
+      svg{
+        path{
+          transition: .3s;
+        }
+      }
+      &:hover{
+        color: #2D4B6F;
+        background-color: $color__bright;
+
+        svg{
+          path{
+            fill:#2D4B6F;
+        }
+      }
+    }
+  }
+  }
+}
+
+// COMPLIANCE SERVICES
+.page-template-compliance-services{
+  .contact-banner__inner{
+    background-color: #F4F4F4;
+
+  h3{
+    color: $color__text;
+  }
+
+  .btn{
+    color: #192E47;
+    border-color: #192E47;
+
+
+    svg{
+      path{
+        fill:#192E47;
+      }
+    }
+
+    &:hover{
+      color: $color__bright!important;
+      background-color: #192E47!important;
+
+      svg{
+        path{
+          fill:$color__bright!important;
+      }
+     }
+    }
+  }
+  } 
+}

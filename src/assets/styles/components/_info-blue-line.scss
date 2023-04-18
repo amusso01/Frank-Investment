@@ -1,0 +1,20 @@
+.info-section__inner{
+  padding: 82px 0;
+
+  .single-info-section{
+    margin-bottom: 50px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+
+    h2{
+      margin-bottom: 20px;
+    }
+
+    .vertical-blue-line{
+      padding-left: 30px;
+      border-left: 2px solid $color__link-hover;
+    }
+  }
+}

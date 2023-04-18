@@ -1,0 +1,30 @@
+.full-width-banner__wrapper{
+  min-height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:#2D4B6F;
+  color: $color__bright;
+
+  .full-width-banner__inner {
+    max-width:1366px;
+    margin:auto;
+    padding-top: 98px;
+    padding-bottom: 100px;
+
+    p,a,li{
+      color:$color__bright;
+      line-height: 25px;
+    }
+
+    >p + p {
+      margin-top: 20px;
+    }
+
+    >h2{
+      margin-bottom: 30px;
+    }
+
+  }
+}

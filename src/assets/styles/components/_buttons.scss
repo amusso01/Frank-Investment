@@ -1,0 +1,26 @@
+.btn__wrapper {
+	height: 100%;
+}
+.btn {
+	padding-left: 30px;
+	padding-right: 30px;
+	min-width: $button__width;
+	min-height: $button__height;
+	background-color: transparent;
+	border: 1px solid #fff;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: $color__bright;
+	border-radius: $button__radius;
+	line-height: 0px;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	transition: .3s;
+	&:hover {
+		color: $color__bright;
+	}
+}

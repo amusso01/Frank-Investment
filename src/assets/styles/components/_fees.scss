@@ -1,0 +1,41 @@
+.fees-banner__inner{
+  padding: 68px 0 97px;
+  background-color: #2D4B6F;
+  color: $color__bright;
+  min-height: 340px;
+  
+  p,a,li{
+    color: $color__bright;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2{
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .fees-banner__grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .single-fee{
+    text-align: center;
+    flex: 1 1 auto;
+    padding: 5px 20px;
+    border-right: 1px solid $color__bright;
+    display: flex;
+    align-items: center;
+    &:last-of-type{
+      border-right: none;
+      max-width: 300px;
+    }
+    .fee-text{
+      letter-spacing: 1.8px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+  }
+}
