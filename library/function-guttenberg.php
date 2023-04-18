@@ -10,14 +10,29 @@ function ea_setup() {
 	// Editor Color Palette
 	add_theme_support( 'editor-color-palette', array(
 		array(
-			'name'  => __( 'Blue', 'ea-starter' ),
-			'slug'  => 'blue',
-			'color'	=> '#165F97',
+			'name'  => __( 'Light Blue', 'ea-starter' ),
+			'slug'  => 'light-blue',
+			'color'	=> '#35A0CD',
 		),
 		array(
-			'name'  => __( 'Orange', 'ea-starter' ),
-			'slug'  => 'orange',
-			'color' => '#F7931C',
+			'name'  => __( 'Dark Blue', 'ea-starter' ),
+			'slug'  => 'dark-blue',
+			'color'	=> '#2D4B6F',
+		),
+		array(
+			'name'  => __( 'Black', 'ea-starter' ),
+			'slug'  => 'black',
+			'color'	=> '#000000',
+		),
+		array(
+			'name'  => __( 'White', 'ea-starter' ),
+			'slug'  => 'white',
+			'color' => '#FFFFFF',
+		),
+		array(
+			'name'  => __( 'Light Grey', 'ea-starter' ),
+			'slug'  => 'light-grey',
+			'color' => '#F4F4F4',
 		),
 	) );
 }
@@ -48,3 +63,15 @@ Allow certain block on Guttenberg
 }
 
 add_filter( 'allowed_block_types', 'misha_allowed_block_types' );*/
+
+
+/*==================================================================================
+Wrap blocks in a div
+==================================================================================*/
+// add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
+// function wrap_classic_block( $block_content, $block ) {
+
+//     $block_content = '<div class="content-block">' . $block_content . '</div>';
+  
+//   return $block_content;
+// }

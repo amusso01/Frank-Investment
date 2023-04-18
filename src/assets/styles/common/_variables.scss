@@ -58,6 +58,23 @@ $color__footerBg: var(--footer-color);
 $color__bright: #ffffff;
 $color__dark: #353434;
 
+
+/* Color Options
+--------------------------------------------- */
+
+$colors: (dark-blue, #2D4B6F),  (white, #ffffff), (light-blue, #35A0CD),(light-grey, #F4F4F4), (black, #000000);
+
+@each $name, $color in $colors {
+	.has-#{$name}-color {
+		color: $color;
+	}
+
+	.has-#{$name}-background-color {
+		background-color: $color;
+	}
+}
+
+
 /*==================================================================================
   BUTTONS
 ==================================================================================*/

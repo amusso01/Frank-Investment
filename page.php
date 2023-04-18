@@ -18,7 +18,7 @@ get_header();
 <?php get_template_part( 'components/page/investment-service-hero') ?>
 
 <main role="main" class="site-main page-main">
-	<div class="content-block">
+
 
 
 		<?php
@@ -38,7 +38,7 @@ get_header();
 
 		endif;
 		?>
-	</div>
+
 </main><!-- #main -->
 
 

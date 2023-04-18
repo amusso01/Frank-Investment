@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g data-name="Group 1" fill="none" stroke="#35a0cd" stroke-width="1.5"><path data-name="Line 12" d="M0 6h12"/><path data-name="Line 13" d="M6 12V0"/></g></svg>

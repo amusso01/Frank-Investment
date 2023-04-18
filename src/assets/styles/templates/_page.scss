@@ -1,3 +1,59 @@
 .page-main{
-  padding: 86px 0;
+
+  // GUTTEN STYLE
+  .wp-block-group__inner-container, .alignwide{
+  @extend .gutten-content-block;
+  }
+
+  h2 + p, h3 + p {
+    margin-top: 30px;
+  }
+
+  p + p {
+    margin-top: 20px;
+  }
+
+  a,li,p{
+    line-height: 25px;
+  }
+
+  p + ul {
+    margin-top: 20px;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  li{
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 25px;
+
+    &::before{
+      @include pseudo;
+      background-image: url(./../images/plus.svg);
+      width: 13px;
+      height: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+
+  .wp-block-button .wp-block-button__link.is-style-outline, .wp-block-button.is-style-outline>.wp-block-button__link{
+    padding: 0.8rem 1.7rem;
+    transition: .3s;
+
+    &:hover{
+      color: $color__bright;
+      background-color: #192E47;
+      border: 2px solid #192E47;
+    }
+  }
+
+  img{
+    margin-bottom: 45px;
+    margin-top: 45px;
+  }
 }

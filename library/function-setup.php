@@ -30,7 +30,7 @@ setlocale(LC_ALL, 'en_US.UTF-8');
 ==================================================================================*/
 // Gutenberg comes with default styles for all blocks
 // by default these styles are disabled. Change this to `true` to enqueue them
-$load_default_block_styles = false;
+$load_default_block_styles = true;
 
 
 
@@ -65,4 +65,4 @@ add_action( 'init', 'wpseed_register_theme_menus');
 $gFontUrl = "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 $fontFamily = "'Roboto', sans-serif";
 $customLogo = get_stylesheet_directory_uri()."/dist/images/foundry-logo.svg";
-$mainColor = "#ff0000";
+$mainColor = "#2D4B6F";
