@@ -6,7 +6,6 @@ import timeline from "../part/timeline";
 
 // https://github.com/aFarkas/lazysizes
 import 'lazysizes';
-import 'lazysizes/plugins/bgset/ls.bgset';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 export default {

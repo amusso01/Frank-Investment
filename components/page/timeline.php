@@ -10,10 +10,11 @@
  $timeline = get_field('timeline');
 ?>
 
-<section class="timeline-text">
-  <div class="timeline-text__inner">
+<section class="timeline">
+  <div class="timeline__inner">
     <div class="content-block">
 
+      <h2 class="main-title">Timeline</h2>
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
@@ -22,7 +23,9 @@
               <li class="glide__slide">
                 <figure>
                   <img
+                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-sizes="auto"
+                    data-parent-fit="cover"
                     data-srcset="<?php bml_the_image_srcset($slide['image']) ?>"
                     alt="team member image"
                     style="max-width: 100%; max-height: 100%;"
@@ -49,4 +52,4 @@
  
     </div>
   </div>
-</section>
+</section>  

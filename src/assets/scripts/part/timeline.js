@@ -5,8 +5,8 @@ export default function timeline(){
     type: 'slider',
     startAt: 0,
     perView: 3,
-    gao: 20,
-    bound:true,
+    gap: 20,
+    // bound:true,
     peek: {
       before: 0,
       after: 150
