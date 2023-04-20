@@ -2,6 +2,7 @@ import smoothscroll from "smoothscroll-polyfill";
 // import hamburger from "./../part/hamburger";
 import dropdownNav from "../part/dropdownNav";
 import fdryAccordion from "../part/accordion";
+import timeline from "../part/timeline";
 
 // https://github.com/aFarkas/lazysizes
 import 'lazysizes';
@@ -22,7 +23,16 @@ export default {
 		dropdownNav()
 
 		// ACCORDION
-		fdryAccordion();
+		const accordion = document.querySelector('.accordion-container')
+		if (typeof(accordion) != 'undefined' && accordion != null){
+			fdryAccordion();
+		}
+
+		// timeline
+		const timelineWrapper = document.querySelector('.glide')
+		if (typeof(timelineWrapper) != 'undefined' && timelineWrapper != null){
+			timeline();
+		}
 	
 	},
 

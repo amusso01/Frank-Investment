@@ -1,11 +1,14 @@
-//Custom styles start here
+
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
 
 // Vendors
 // @import "vendors/lazysizes";
 // @import "vendors/s2r";
 @import "vendors/accordion-js";
 
-
+//Custom styles start here
 // Common
 @import "common/reset";
 @import "common/variables";
@@ -36,3 +39,4 @@
 
 // Templates
 @import "templates/page";
+@import "templates/contact";

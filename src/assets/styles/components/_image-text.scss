@@ -20,6 +20,8 @@
           padding-left: 30px;
           border-left: 2px solid $color__link-hover;
         }
+
+  
       }
     }
   }
@@ -47,6 +49,10 @@
     p{
       padding-left: 30px;
       border-left: 2px solid $color__link-hover;
+    }
+
+    p + p{
+      padding-top: 18px;
     }
 
   }
