@@ -1,0 +1,54 @@
+.history-services__inner{
+  padding: 86px 0;
+  background-color: #F4F4F4;
+
+
+  .history-services__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+  }
+
+  .single-intro-pages-card{
+    background-color: $color__bright;
+    display: flex;
+    flex-direction: column;
+
+    figure{
+      min-height: 257px;
+      position: relative;
+
+      >img{
+        @extend %cover;
+        object-fit: cover;
+      }
+    }
+
+    .card-content{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 20px 34px;
+
+      h4{
+        margin-bottom: 11px;
+      }
+
+      .excerpt{
+        margin-bottom: 18px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .link{
+        margin-top: auto;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        color: #57ADD1;
+        font-weight: 500;
+      }
+    }
+  }
+
+}

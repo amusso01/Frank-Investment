@@ -27,7 +27,9 @@ get_header();
 	<?php get_template_part( 'components/page/timeline') ?>
 
 	<!-- IMAGE TEXT RIGHT -->
-	<?php get_template_part( 'components/page/investment-image-right-text') ?>
+	<div class="white-bg">
+		<?php get_template_part( 'components/page/investment-image-right-text') ?>
+	</div>
 	
 	<!-- SERVICES -->
 	<?php get_template_part( 'components/page/history-services') ?>

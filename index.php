@@ -16,33 +16,22 @@ get_header();
 ?>
 
 
+<?php get_template_part( 'components/index/hero') ?>
+
+
 <main role="main" class=" main index-main">
 
-<?php
-if ( have_posts() ) :?>
+<?php get_template_part( 'components/index/latest-news') ?>
 
-	<header>
-		<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-	</header>
+<?php get_template_part( 'components/index/page-links') ?>
 
-<?php
-	/* Start the Loop */
-	while ( have_posts() ) :
 
-		the_post();
-		get_template_part( 'template-parts/content', get_post_type() );
-
-	endwhile;
-
-else :
-
-	get_template_part( 'template-parts/content', 'none' );
-
-endif;
-?>
+<?php get_template_part( 'components/index/filter-nav') ?>
+<?php get_template_part( 'components/index/articles') ?>
 
 </main><!-- #main -->
 
 
 <?php
 get_footer();
+

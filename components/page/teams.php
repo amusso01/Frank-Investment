@@ -26,7 +26,7 @@
           $teamDescription = $member->post_content;
           $teamImageId = get_post_thumbnail_id( $teamId );
           ?>
-          <div class="member"  id="js-modal" data-modal="modal-<?php echo $teamId ?>" >
+          <div class="member"  id="js-modal-<?php echo $teamId ?>" data-modal="modal-<?php echo $teamId ?>" >
             <figure>
               <img
                 data-sizes="auto"
