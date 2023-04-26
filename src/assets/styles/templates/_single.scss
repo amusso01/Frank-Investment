@@ -1,0 +1,29 @@
+.single-main{
+
+  padding: 70px 0 100px;
+
+  .single-hero{
+    max-width: 900px;
+    margin: auto;
+
+    >h1{
+      margin-bottom: 45px;
+      text-align: center;
+      font-size: 42px;
+      line-height: 55px;
+    }
+
+    figure{
+      margin-bottom: 70px;
+    }
+
+    img{
+      margin: auto;
+    }
+  }
+
+  .single-wrapper{
+    max-width: 1000px;
+    margin: auto;
+  }
+}

@@ -9,33 +9,41 @@
 
 get_header();
 ?>
+<main role="main" class="single-main">
 
-	<div id="primary" class="container content-area">
-		<div class="row">
-			<main id="main" class="site-main sidebar">
-
+	<div class="content-block">
+		<section class="single-hero">
+			<h1><?= get_the_title() ?></h1>
+	
+			<figure>
+				<img src="<?= get_the_post_thumbnail_url() ?>" alt="article feature image">
+			</figure>
+		</section>
+	
+		<div class="single-wrapper">
 			<?php
-			while ( have_posts() ) :
-				the_post();
-
-				get_template_part( 'template-parts/content', get_post_type() );
-
-				the_post_navigation();
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
+	
+			if ( have_posts() ) :
+				while ( have_posts() ) :
+					the_post();
+	
+					the_content();
+	
+	
+				endwhile; // End of the loop.
+	
+			else :
+	
+				get_template_part( 'template-parts/content', 'none' );
+	
+			endif;
 			?>
-
-			</main><!-- #main -->
-
-			<?php get_sidebar(); ?>
-
 		</div>
-	</div><!-- #primary -->
+	</div>
+
+
+</main><!-- #main -->
+
 
 <?php
 get_footer();

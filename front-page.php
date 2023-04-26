@@ -24,6 +24,8 @@ get_header();
 
  <?php get_template_part( 'components/front/latest-news') ?>
 
+ <?php get_template_part( 'components/page/subscribe') ?>
+
 </main>
 
 <?php get_footer(); ?>

@@ -67,3 +67,12 @@ require get_template_directory() . '/library/function-custom.php';
 
 
 
+function search_by_date_filter($where = '') {
+  if (isset($_GET['search_year']) && isset($_GET['search_month'])) {
+      $year = $_GET['search_year'];
+      $month = $_GET['search_month'];
+      $where .= " AND YEAR(post_date) = '" . $year . "' AND MONTH(post_date) = '" . $month . "'";
+  }
+  return $where;
+}
+add_filter('posts_where', 'search_by_date_filter');

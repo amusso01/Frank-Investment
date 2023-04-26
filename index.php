@@ -15,6 +15,7 @@
 get_header();
 ?>
 
+<?php  if (!isset($_GET['search_year']) && !isset($_GET['search_month'])) : ?>
 
 <?php get_template_part( 'components/index/hero') ?>
 
@@ -27,10 +28,26 @@ get_header();
 
 
 <?php get_template_part( 'components/index/filter-nav') ?>
+
 <?php get_template_part( 'components/index/articles') ?>
+
+<?php get_template_part( 'components/page/subscribe') ?>
 
 </main><!-- #main -->
 
+<?php else : ?>
+
+  <?php get_template_part( 'components/index/hero') ?>
+  <main role="main" class=" main index-main" style="margin-top:70px;" >
+
+  <?php get_template_part( 'components/index/filter-nav') ?>
+
+  <?php get_template_part( 'components/index/articles') ?>
+
+  <?php get_template_part( 'components/page/subscribe') ?>
+
+  </main><!-- #main -->
+<?php endif ?>
 
 <?php
 get_footer();

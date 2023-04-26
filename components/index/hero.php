@@ -7,10 +7,12 @@
  * @package foundry
  **/
 
-$id =get_queried_object()->ID;
+  $id =get_queried_object()->ID;
 
- $bg = get_the_post_thumbnail_url($id);
- $links = get_field('side_links', $id);
+  $bg = get_the_post_thumbnail_url($id);
+  $links = get_field('side_links', $id);
+
+ 
 ?>
 
 <section class="hero index__hero" >
@@ -26,18 +28,30 @@ $id =get_queried_object()->ID;
           <p class="subheader"><?php echo get_field('subheader', $id) ?></p>
         </div>
 
-        <?php if($links): ?>
-        <div class="links">
-          <div class="link__wrapper">
-            <?php foreach($links as $link) : ?>
-              <div class="single-link">
+        <?php  if (!isset($_GET['search_year']) && !isset($_GET['search_month'])) : ?>
+          <?php if($links): ?>
+          <div class="links">
+            <div class="link__wrapper">
+              <?php foreach($links as $link) : ?>
+                <div class="single-link">
 
-                <a href="<?php echo $link['link']['url'] ?>" target="<?php echo $link['link']['target'] ?>"><span><img src="<?php echo $link['icon'] ?>" alt="service icon"></span><?php echo $link['link']['title'] ?></a>
-                <?php get_template_part( 'svg-template/svg', 'arrow' ) ?>
-              </div>
-            <?php endforeach; ?>
+                  <a href="<?php echo $link['link']['url'] ?>" target="<?php echo $link['link']['target'] ?>"><span><img src="<?php echo $link['icon'] ?>" alt="service icon"></span><?php echo $link['link']['title'] ?></a>
+                  <?php get_template_part( 'svg-template/svg', 'arrow' ) ?>
+                </div>
+              <?php endforeach; ?>
+            </div>
           </div>
-        </div>
+          <?php endif; ?>
+        <?php else:  ?>
+          <div class="links">
+            <div class="link__wrapper">
+                <div class="single-link">
+                  <a href="#subscribe"><span><?php get_template_part( 'svg-template/svg', 'mail' ) ?></span>SUBSCRIBE</a>
+                  <?php get_template_part( 'svg-template/svg', 'arrow' ) ?>
+                </div>
+            </div>
+          </div>
+
         <?php endif; ?>
 
       </div>
