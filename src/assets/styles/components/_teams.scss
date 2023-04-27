@@ -93,3 +93,75 @@
   }
 
 }
+
+// MODAL
+.member {
+
+  .memberModal{
+    position: fixed;
+    cursor: auto;
+    top:0;
+    left:0;
+    width:100vw;
+    min-height:100vh;
+    background-color:#2D4B6F;
+    z-index: 10;
+    padding:100px 0;
+
+    .memberModal-grid{
+      display: grid;
+      grid-template-columns: 1.1fr 2fr;
+    }
+
+    .fixed-info{
+      height:100%;
+      h2{
+        color: $color__bright;
+        text-align:left;
+        margin-bottom:20px;
+      }
+
+      .role{
+        color:$color__bright;
+        letter-spacing: 1.8px;
+        font-size: 18px;
+      }
+    }
+
+    .scrollable-info{
+      position: relative;
+    }
+
+    .closeModal{
+      padding-bottom: 100px;
+      text-align: right;
+      background-color:#2D4B6F;
+      z-index: 10;
+      position: sticky;
+      top:0px;
+
+      button{
+        background-color: transparent;
+        border: none;
+        cursor:pointer;
+        color: $color__bright;
+        font-size: 21px;
+      }
+    }
+
+    .modal-content{
+      display: flex;
+      flex-direction:column;
+      padding-left: 80px;
+      border-left:1px solid $color__bright;
+      color: $color__bright;
+      height:100vh;
+      padding-bottom: 300px;
+      overflow: scroll;
+
+      p,li,a{
+        color: $color__bright;
+      }
+    }
+  }
+}
