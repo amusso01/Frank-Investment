@@ -3,6 +3,7 @@ import smoothscroll from "smoothscroll-polyfill";
 import dropdownNav from "../part/dropdownNav";
 import fdryAccordion from "../part/accordion";
 import timeline from "../part/timeline";
+import teamModal from "../part/teamModal";
 
 // https://github.com/aFarkas/lazysizes
 import 'lazysizes';
@@ -31,6 +32,12 @@ export default {
 		const timelineWrapper = document.querySelector('.glide')
 		if (typeof(timelineWrapper) != 'undefined' && timelineWrapper != null){
 			timeline();
+		}
+
+		// modal
+		const member = document.querySelector('.modalTeamMember')
+		if (typeof(member) != 'undefined' && member != null){
+			teamModal();
 		}
 	
 	},
