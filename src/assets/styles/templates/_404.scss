@@ -1,0 +1,21 @@
+.main-error{
+  .btn{
+    color: $color__main;
+    font-weight: 500;
+    border-color: $color__main;
+    margin-top:50px;
+
+    &:hover{
+      background-color:$color__main;
+      color:white;
+    }
+  }
+
+  h2{
+    margin-bottom:23px
+  }
+
+  p{
+    max-width: 860px;
+  }
+}
