@@ -112,6 +112,10 @@
     pointer-events: none;
     transition: opacity .4s;
 
+    @include media('<phone-land'){
+      padding:40px 0;
+    }
+
     &.is-active{
       opacity: 1;
       pointer-events: all;
@@ -120,6 +124,9 @@
     .memberModal-grid{
       display: grid;
       grid-template-columns: 1.1fr 2fr;
+      @include media('<phone-land'){
+        grid-template-columns: 1fr;
+      }
     }
 
     .fixed-info{
@@ -148,6 +155,10 @@
       z-index: 10;
       position: sticky;
       top:0px;
+      @include media('<phone-land'){
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
 
       button{
         background-color: transparent;
@@ -167,6 +178,11 @@
       height:100vh;
       padding-bottom: 300px;
       overflow: scroll;
+
+      @include media('<phone-land'){
+        padding-left: 15px;
+      }
+
       p+p{
         margin-top: 12px;
       }

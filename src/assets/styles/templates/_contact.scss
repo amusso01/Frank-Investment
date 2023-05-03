@@ -42,6 +42,12 @@
       grid-template-columns: repeat(3, minmax(270px, 1fr));
       justify-items: center;
 
+
+      @include media('<phone-land'){
+       grid-template-columns: 1fr;
+       row-gap: 40px;
+      }
+
     }
 
     .single-person{
@@ -51,6 +57,11 @@
       width: 100%;
       padding: 0 60px;
       border-right: 1px solid $color__link-hover;
+
+      @include media('<phone-land'){
+        padding: 0 20px;
+        border-right: none;
+      }
 
       &:last-of-type{
         border-right: none;
@@ -81,6 +92,9 @@
         letter-spacing: 1.2px;
         border-color: $color__main;
         width: 100%;
+        @include media('<phone-land'){
+          padding: 0 10px;
+        }
 
         &:hover{
           color: $color__bright;

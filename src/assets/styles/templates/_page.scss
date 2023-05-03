@@ -45,6 +45,10 @@
     padding: 0.8rem 1.7rem;
     transition: .3s;
 
+    @include media('<phone'){
+      text-align: center;
+    }
+
     &:hover{
       color: $color__bright;
       background-color: #192E47;

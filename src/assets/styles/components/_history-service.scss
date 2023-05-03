@@ -1,13 +1,14 @@
 .history-services__inner{
   padding: 86px 0;
   background-color: #F4F4F4;
+  overflow-x: hidden;
 
 
   .history-services__grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     column-gap: 20px;
-
+    overflow-x: scroll;
   }
 
   .single-intro-pages-card{
@@ -39,6 +40,10 @@
         margin-bottom: 18px;
         font-size: 14px;
         line-height: 18px;
+
+        @include media('<phone'){
+          display: none;
+        }
       }
 
       .link{
@@ -47,6 +52,9 @@
         letter-spacing: 1.6px;
         color: #57ADD1;
         font-weight: 500;
+        @include media('<phone'){
+          font-size: 14px;
+        }
       }
     }
   }

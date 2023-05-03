@@ -10,6 +10,18 @@ export default function timeline(){
     peek: {
       before: 0,
       after: 150
+    },
+    breakpoints: {
+      970: {
+        perView: 2
+      },
+      660:{
+        perView: 1,
+        peek: {
+          before: 0,
+          after: 40
+        },
+      }
     }
 
   }).mount()
