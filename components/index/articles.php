@@ -42,6 +42,7 @@
             </figure>
 
             <a  href="<?= get_the_permalink(  )?>" class="card-content">
+                <p class="article-info"><?=  get_the_date( 'F d, Y' ) ?> by <?= the_author_meta( 'display_name' , $post->post_author ); ?></p>
                 <h6><?= get_the_title(  )?></h6>
                 <p class="excerpt"><?= get_the_excerpt(  ) ?></p>
                 <p class="link">READ MORE<span><i><?php get_template_part( 'svg-template/svg', 'arrow' ) ?></i></span></p>

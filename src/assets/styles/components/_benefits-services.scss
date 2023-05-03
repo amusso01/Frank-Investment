@@ -6,16 +6,29 @@
   display: grid;
   grid-template-columns: 1.25fr 1fr;
 
+  @include media('<phone'){
+    grid-template-columns: 1fr;
+  }
+
+
   .services-benefits__service{
     padding-top: 75px;
     padding-bottom: 75px;
     @extend .content-block;
+    @include media('<phone'){
+      padding-top: 45px;
+      padding-bottom: 35px;
+    }
   }
 
   .services-benefits__benefits{
     padding-top: 75px;
     padding-bottom: 75px;
     @extend .content-block;
+    @include media('<phone'){
+      padding-top: 45px;
+      padding-bottom: 35px;
+    }
   }
 
   &.first, &.third{
@@ -32,6 +45,10 @@
 
   h2{
     margin-bottom: 31px;
+
+    @include media('<tablet'){
+      font-size: 28px;
+    }
   }
 
   .services-benefits__service{

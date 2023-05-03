@@ -7,6 +7,7 @@
 .investment-service__wrapper{
   background-size: cover;
   background-repeat: no-repeat;
+  padding:20px 0;
 
   .grid{
     width: 100%;
@@ -15,6 +16,12 @@
     align-items: center;
     color: $color__bright;
 
+    @include media('<phone-land'){
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 40px;
+    }
+
     p,a,li{
       color: $color__bright;
     }
@@ -22,8 +29,12 @@
     .title{
       >h1{
         margin-bottom: 20px;
-        max-width: 70%;
         line-height: 54px;
+
+        @include media('<phone-land'){
+          font-size: 45px;
+          line-height: 50px;
+        }
       }
 
       .subheader{

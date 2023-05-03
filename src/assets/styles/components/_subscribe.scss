@@ -10,11 +10,21 @@
   .subscribe-grid{
     display: grid;
     grid-template-columns: 1.2fr 2fr;
+
+    @include media ('<phone-land'){
+      grid-template-columns: 1fr;
+      row-gap:40px;
+    }
   }
 
   .subscribe-grid__info{
     padding-right: 70px;
     border-right: 1px solid $color__bright;
+
+    @include media ('<phone-land'){
+      border-right: none;
+    }
+ 
 
     .h2{
       margin-bottom: 20px;
@@ -23,6 +33,10 @@
 
   .subscribe-grid__form{
     padding-left: 70px;
+
+    @include media ('<phone-land'){
+      padding-left: 0px;
+    }
   }
 
   .forminator-checkbox-box{
@@ -83,6 +97,9 @@
 
   .subscribe-grid__info{
     border-right: 1px solid #57ADD1;
+    @include media ('<phone-land'){
+      border-right: none;
+    }
   }
 
 

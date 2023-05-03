@@ -20,7 +20,6 @@ get_header();
 <main role="main" class="site-main page-main">
 
 
-
 		<?php
 
 		if ( have_posts() ) :
@@ -38,6 +37,7 @@ get_header();
 
 		endif;
 		?>
+
 
 </main><!-- #main -->
 

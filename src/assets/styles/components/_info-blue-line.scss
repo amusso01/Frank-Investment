@@ -15,6 +15,10 @@
     .vertical-blue-line{
       padding-left: 30px;
       border-left: 2px solid $color__link-hover;
+
+      ul{
+        list-style-position: inside;
+      }
     }
   }
 }

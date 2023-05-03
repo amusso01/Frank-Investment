@@ -35,7 +35,7 @@
                 class="lazyload" />
             </figure>
 
-            <a href="<?php echo get_the_title( $page->ID )?>" class="card-content">
+            <a href="<?php echo get_the_permalink( $page->ID )?>" class="card-content">
                 <h4><?php echo get_the_title( $page->ID )?></h4>
                 <p class="link">LEARN MORE <span><i><?php get_template_part( 'svg-template/svg', 'arrow' ) ?></i></span></p>
             </a>

@@ -42,6 +42,7 @@ $displaySocial = get_theme_mod('display-social');
 		<div class="site-header__inner content-block">
 			<?php get_template_part( 'components/header/logo' ); ?>
 			<?php get_template_part( 'components/navigation/primary' ); ?>
+			<?php get_template_part( 'components/header/hamburger' ); ?>
 			<div class="main-menu_bg" id="jsMenuBg"></div>
 		</div>
 	</header><!-- .site-header -->

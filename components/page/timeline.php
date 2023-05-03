@@ -41,11 +41,18 @@
             <?php endforeach; ?>
 
           </ul>
+
+
           <div class="glide__bullets" data-glide-el="controls[nav]">
             <?php foreach ($timeline as $key => $slide) : ?>
             <button class="glide__bullet" data-glide-dir="=<?php  echo $key ?>"></button>
             <?php endforeach; ?>
           </div>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="12.5" viewBox="0 0 7.5 12.5"><g data-name="Group 154"><path data-name="Union 9" d="M.75 11.75l6-5.5zm0-11l6 5.5z" fill="none" stroke="#57add1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></g></svg></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="12.5" viewBox="0 0 7.5 12.5"><g data-name="Group 154"><path data-name="Union 9" d="M.75 11.75l6-5.5zm0-11l6 5.5z" fill="none" stroke="#57add1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></g></svg></button>
         </div>
       </div>
 

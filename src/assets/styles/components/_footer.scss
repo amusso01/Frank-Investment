@@ -34,6 +34,11 @@ footer.site-footer {
 	.site-footer__top-grid{
 		display: grid; 
 		grid-template-columns: repeat(3, 1fr);
+
+		@include media('<phone-land'){
+			grid-template-columns: 1fr;
+			row-gap: 45px;
+		}
 	}
 
 	.site-footer__bottom{
@@ -41,6 +46,7 @@ footer.site-footer {
 		min-height: 244px;
 		display: flex;
 		align-items: center;
+		padding: 60px 0;
 
 		p,a{
 			text-align: center;
@@ -67,6 +73,12 @@ footer.site-footer {
 		padding: 0 45px;
 		border-right: 1px solid $color__bright;
 		border-left: 1px solid $color__bright;
+
+		@include media('<phone-land'){
+			border-right: none;
+			border-left: none;
+			padding: 0 0px;
+		}
 	}
 
 	.single-footer-col__left{
@@ -75,6 +87,10 @@ footer.site-footer {
 
 	.single-footer-col__right{
 		padding-left: 45px;
+
+		@include media('<phone-land'){
+			padding-left: 0px;
+		}
 
 		.footer-legal{
 			margin-bottom: 80px;

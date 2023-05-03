@@ -1,6 +1,6 @@
 .teams-page-section{
   padding: 75px 0;
-
+  overflow-x: hidden;
   position: relative;
 
   &:after{
@@ -35,6 +35,7 @@
     grid-template-columns: repeat(3, minmax(230px, 1fr));
     column-gap: 20px;
     margin-bottom: 60px;
+    overflow-x: scroll;
   }
 
   figure{

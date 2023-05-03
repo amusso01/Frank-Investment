@@ -1,0 +1,38 @@
+#pencet{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  cursor:pointer;
+
+
+}
+
+.site-header__hamburger{
+  border: none;
+  @include media('>phone-land'){
+    display:none;
+  }
+}
+
+#pencet span{
+  background-color:$color__link-hover;
+  width:1.8em;
+  height:.2em;
+  margin: 3px 0;
+  display:block;
+  transition: all .4s ease;
+  transform-origin:0 0;
+  border-radius: 2px;
+}
+
+.is-active span:nth-child(1) {
+  transform: rotate(45deg) translate(0px, -6px);
+}
+
+.is-active span:nth-child(2) {
+  Transform: scaleX(0);
+}
+
+.is-active span:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, 0);
+}

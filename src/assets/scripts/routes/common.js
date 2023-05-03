@@ -1,5 +1,5 @@
 import smoothscroll from "smoothscroll-polyfill";
-// import hamburger from "./../part/hamburger";
+import hamburger from "./../part/hamburger";
 import dropdownNav from "../part/dropdownNav";
 import fdryAccordion from "../part/accordion";
 import timeline from "../part/timeline";
@@ -17,7 +17,7 @@ export default {
 		smoothscroll.polyfill()
 
 		// Hamburger event listener
-		// hamburger()
+		hamburger()
 
 		// NAV
 		dropdownNav()

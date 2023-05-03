@@ -8,8 +8,10 @@
  */
 ?>
 
-<button class="site-header__item site-header__hamburger hamburger hamburger--collapse " id="hamburger" type="button">
-    <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-    </span>
+<button class="site-header__item site-header__hamburger" id="hamburger" type="button">
+    <div id="pencet">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </button><!-- hamburger  -->

@@ -45,9 +45,13 @@
 					<div class="single-footer-col single-footer-col__right">
 
 						<div class="footer-legal">
-							<p>Regulatory Disclosures Including The Pillar 3 Disclosure. </p>
-							<p>Rts 28 Disclosure 2020, Rts 28 Disclosure 2019, Rts 28 Disclosure 2018, Rts 28 Disclosure 2017. </p>
-							<p>UK Stewardship Code Statement And Shareholder Rights Directive Ii Disclosure. Regulatory Disclosures Including The Pillar 3 Disclosure</p>
+							<?php 
+							$links = get_field('footer_links', 'options');
+
+							foreach($links as $link) :
+							?>
+							<p><a href="<?= $link['footer_link'] ?>"> <?= $link['footer_content']  ?></a> </p>
+							<?php endforeach; ?>
 						</div>
 
 						<div class="footer-social__wrapper">

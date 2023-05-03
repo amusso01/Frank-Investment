@@ -1,9 +1,16 @@
 .site-header{
   background-color: #F4F4F4;
+  @include media('<phone-land'){
+    padding: 8px 0;
+  }
 }
 
 .site-header__inner{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include media('>phone-land', '<tablet'){
+    justify-content: space-around;
+  }
 }

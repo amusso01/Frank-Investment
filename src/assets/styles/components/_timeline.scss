@@ -19,8 +19,8 @@
   .glide__slide{
     figure{
       position: relative;
-      height: 315px;
-      width: 370px;
+      height: 278px;
+      width: 100%;
 
       >img{
         @extend %cover;
@@ -62,6 +62,31 @@
         }
 
       }
+    }
+  }
+
+  .glide__arrows{
+
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    svg{
+      width:20px;
+      height:20px;
+    }
+
+    .glide__arrow{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .glide__arrow--left{
+      transform: rotate(-180deg); 
+
     }
   }
 

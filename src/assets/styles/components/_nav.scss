@@ -1,5 +1,4 @@
 .sub-menu-wrap{
-	// display:none;
 	position:absolute;
 	top:100%;
 	left:0;	
@@ -74,6 +73,9 @@
 }
 
 .site-header__menu{
+
+
+
 	>ul{
 		display:flex;
 		column-gap:50px;
@@ -114,6 +116,122 @@
 					&:after{
 						opacity:1
 					}
+				}
+			}
+		}
+	}
+
+	// MOBILE
+	@include media('<phone-land'){
+
+		position: absolute;
+		background-color: $color__main;
+		left: -300px;
+		top: 71px;
+		width: 100%;
+		padding: 50px 30px;
+		opacity: 0;
+		pointer-events: none;
+		transition: .4s;
+
+		&.is-active{
+			pointer-events: all;
+			left:0px;
+			opacity: 1;
+		}
+	
+		>ul{
+			flex-direction: column;
+
+			>.menu-item {
+				>a{
+					color:white;
+					font-weight: 500;
+	
+					&:after{
+						display:none
+					}
+	
+					&:hover{
+						color:white
+					}
+				}
+	
+				&.current-menu-ancestor{
+					>a{
+						&:after{
+							opacity:1
+						}
+					}
+				}
+			}
+
+			.menu-item-has-children{
+				>a{
+					position: relative;
+
+					&::before{
+						@include pseudo;
+						top:53%;
+						right: -40px;
+						transform: translateY(-50%);
+						transform-origin: left;
+						width: 15px;
+						height:15px;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.5' height='12.5' viewBox='0 0 7.5 12.5'%3E%3Cg id='Group_154' data-name='Group 154' transform='translate(-790.75 -3234.842)'%3E%3Cpath id='Union_9' data-name='Union 9' d='M0,0,5.5,6ZM11,0,5.5,6Z' transform='translate(791.5 3246.592) rotate(-90)' fill='none' stroke='%2357add1' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E%0A");
+					}
+				}
+			}
+		}
+
+		.sub-menu-wrap{
+			position:static;
+			width:auto;
+			z-index:10;
+			padding-top: 0px;
+			opacity: 0;
+			pointer-events: none;
+			transition: .5s;
+			height:0px;
+		
+			&.is-open-mobile{
+				opacity: 1;
+				pointer-events: all;
+				height:100%;
+			}
+			
+			.menu-item{
+		
+				&:first-of-type{
+					>a{
+						padding-top: 0;
+						&::after{
+							display:none;
+						}
+					}
+				}
+		
+		
+				>a{
+					color:$color__bright;
+					font-size: 14px;
+					padding: 13px 0;
+					display:inline-block;
+					position:relative;
+					font-weight: 500;
+					&:after{
+						@include pseudo;
+						width: 66px;
+						height:1px;
+						background-color: $color__bright;
+						top: 0;
+					}
+		
+					&:hover{
+						text-decoration: underline;
+					}
+		
+				
 				}
 			}
 		}
