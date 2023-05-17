@@ -1,14 +1,18 @@
 .index__hero{
-  padding: 15px 0;
+  @include media('<phone-land'){
+    padding: 15px 0;
+  }
+
   .single-link{
     >a{
       span{
         margin-right: 35px!important;
       }
     }
-
-    svg{
-      margin-left: 70px!important;
+    @include media('>phone-land'){
+      svg{
+        margin-left: 70px!important;
+      }
     }
   }
 }

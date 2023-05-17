@@ -58,20 +58,20 @@ $advisors_query = new WP_Query([
 
 	<?php wp_reset_postdata(); ?>
 
-	<h2>Advisors</h2>
+  <?php if ( $advisors_query->have_posts() ) : ?>
+	  <h2>Advisors</h2>
 
-	<section class="advisors teams-page-section__grid">
+	  <section class="advisors teams-page-section__grid">
 
 
-		<?php if ( $advisors_query->have_posts() ) : ?>
 				<?php while ( $advisors_query->have_posts() ) : $advisors_query->the_post(); ?>
 
 
 				<?php get_template_part(  'components/page/team-card' ) ?>
 
 				<?php endwhile; ?>
-			<?php endif; ?>
-	</section>
+    </section>
+    <?php endif; ?>
 
 	<?php wp_reset_postdata(); ?>
 

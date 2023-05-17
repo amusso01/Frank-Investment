@@ -20,6 +20,10 @@
 	letter-spacing: 1.6px;
 	text-transform: uppercase;
 	transition: .3s;
+
+	@include media('<phone-land'){
+		line-height: 20px;
+	}
 	&:hover {
 		color: $color__bright;
 	}

@@ -149,15 +149,15 @@
     }
 
     .closeModal{
-      padding-bottom: 100px;
       text-align: right;
       background-color:#2D4B6F;
       z-index: 10;
-      position: sticky;
-      top:0px;
+      position: relative;
+      top: -30px;
       @include media('<phone-land'){
         padding-bottom: 30px;
         padding-top: 30px;
+        top: 0px;
       }
 
       button{

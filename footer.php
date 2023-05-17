@@ -57,9 +57,9 @@
 						<div class="footer-social__wrapper">
 							<h4>Follow</h4>
 							<ul>
-								<li><a href=""><?php get_template_part( 'svg-template/svg', 'linkedin' )  ?></a></li>
-								<li><a href=""><?php get_template_part( 'svg-template/svg', 'instagram' )  ?></a></li>
-								<li><a href=""><?php get_template_part( 'svg-template/svg', 'twitter' )  ?></a></li>
+								<li><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/frank-investments/"><?php get_template_part( 'svg-template/svg', 'linkedin' )  ?></a></li>
+								<li><a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/frank.investments/"><?php get_template_part( 'svg-template/svg', 'instagram' )  ?></a></li>
+								<li><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/PaulSedg"><?php get_template_part( 'svg-template/svg', 'twitter' )  ?></a></li>
 							</ul>
 						</div>
 					</div>
