@@ -28,7 +28,7 @@ get_header();
 				<p class="address-first">London and Sunningdale, Berkshire, UK.</p>
 				<p class="address-title-office">LONDON OFFICE ADDRESS</p>
 				<p class="address-pre">
-				Frank Investments, <br> Lansdowne House, 57 Berkeley Square <br> London <br> W1J 6ER
+				Frank Investments, <br> Holborn Town Hall, <br>Level 3, 193-197 High Holborn <br> London <br> WC1V 7BD
 				</p>
 				<p class="address-last">
 				If you have any questions or would like to know more, please feel free to call or email us.
@@ -43,7 +43,7 @@ get_header();
 
 				<div class="single-person">
 					<h3>Paul Sedgwick</h3>
-					<p class="blue">FOR XX SERVICES</p>
+					<p class="blue" style="text-align:center;">FOR INVESTMENT SERVICES</p>
 					<div class="phone-container">
 						<p>Telephone</p>
 						<a href="tel:+442039949775">+ (44) 20 3994 9775</a>
@@ -54,7 +54,7 @@ get_header();
 
 				<div class="single-person">
 					<h3>Howard Weller</h3>
-					<p class="blue">FOR XX SERVICES</p>
+					<p class="blue" style="text-align:center;">FOR CONSULTANCY SERVICES</p>
 					<div class="phone-container">
 						<p>Telephone</p>
 						<a href="tel:+4402039949776">+ (44) 020 3994 9776</a>
@@ -64,7 +64,7 @@ get_header();
 
 				<div class="single-person">
 					<h3>Amy Grovit</h3>
-					<p class="blue">FOR REGULATION SERVICES</p>
+					<p class="blue" style="text-align:center;">FOR COMPLIANCE & APPOINTED REPRESENTATIVE SERVICES</p>
 					<div class="phone-container">
 						<p>Telephone</p>
 						<a href="tel:+4402039949777">+ (44) 020 3994 9777</a>

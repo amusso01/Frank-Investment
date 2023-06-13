@@ -33,18 +33,19 @@
 							<h4>London Office</h4>
 							<p>Frank Investments 
 								<br>
-								Lansdowne House 
+								Holborn Town Hall
 								<br>
-								57 Berkeley Square 
+								Level 3, 193-197 High Holborn
 								<br>
 								London 
 								<br>
-								W1J 6Er</p>
+								WC1V 7BD</p>
 						</div>
 					</div>
 					<div class="single-footer-col single-footer-col__right">
 
 						<div class="footer-legal">
+							<h4>Regulatory Disclosures</h4>
 							<?php 
 							$links = get_field('footer_links', 'options');
 
@@ -72,10 +73,10 @@
 			<div class="site-footer__bottom">
 				<div class="site-footer__bottom-wrapper content-block" >
 					<p class="disclaimer">
-					Disclaimer: The views expressed on this website and in the blog are the personal views of the authors and do not constitute investment advice. This website is strictly intended for Professional Investors only. Click here to see the disclaimer and cookie policy in full. | <a href="<?php echo site_url('privacy-policy') ?>">Privacy Policy </a>
+					Disclaimer: The views expressed on this website and in the blog are the personal views of the authors and do not constitute investment advice. Click here to see the disclaimer and cookie policy in full. | <a href="<?php echo site_url('privacy-policy') ?>">Privacy Policy </a>
 					</br>
 					</br>
-					Frank Investments Limited is a Private Limited Company registered in England and Wales, registered number 5629005, Registered Address: 24 Old Bond Street, London, W1S 4AP, UNITED KINGDOM. Frank Investments Limited is authorised and regulated by the Financial Conduct Authority (FCA), reference number 627697, Principal place of business: 57 Berkeley Square, London, W1J 6ER, UNITED KINGDOM.
+					Frank Investments Limited is a Private Limited Company registered in England and Wales, registered number 5629005, Registered Address: 24 Old Bond Street, London, W1S 4AP, UNITED KINGDOM. Frank Investments Limited is authorised and regulated by the Financial Conduct Authority (FCA), reference number 627697, Principal place of business: Holborn Town Hall, Level 3, 193-197 High Holborn, London, WC1V 7BD, UNITED KINGDOM.
 					</p>
 				</div>
 			</div>

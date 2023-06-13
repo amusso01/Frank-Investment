@@ -63,6 +63,12 @@
                 <p class="list-benefit"><span><?php get_template_part( 'svg-template/svg', 'plus' ) ?></span><span class="list-text"><?php echo $benefit['single_benefit'] ?></span></p>
               <?php endforeach; ?>
           </div>
+          <div class="serives-benefits__second-row">
+              <h2><?php echo $benefitSecond['benefit_second_title'] ?></h2>
+              <?php foreach ($benefitSecond['benefit_second_content'] as $benefit) : ?>
+                <p class="list-benefit"><span><?php get_template_part( 'svg-template/svg', 'plus' ) ?></span><span class="list-text"><?php echo $benefit['single_benefit'] ?></span></p>
+              <?php endforeach; ?>
+          </div>
         </div>
 
     </div>

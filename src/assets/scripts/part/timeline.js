@@ -6,7 +6,7 @@ export default function timeline(){
     startAt: 0,
     perView: 3,
     gap: 20,
-    // bound:true,
+    bound:true,
     peek: {
       before: 0,
       after: 150
